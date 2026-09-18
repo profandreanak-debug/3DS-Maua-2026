@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos de TCC - Turma 2026</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #7f8c8d;
+            --primary-color: #3498db;
+            --primary-hover: #2980b9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: var(--text-primary);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 2rem 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
+
+        .card .authors {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .card .authors strong {
+            color: var(--text-primary);
+        }
+
+        .btn-link {
+            display: inline-block;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .btn-link:hover {
+            background-color: var(--primary-hover);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 1.5rem 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galeria de Projetos de TCC</h1>
+        <p>Apresentação dos trabalhos de conclusão de curso da turma</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <!-- Projeto 1 -->
+            <div class="card">
+                <div>
+                    <h3>Sistema de Gerenciamento Hospitalar Automatizado</h3>
+                    <p class="authors"><strong>Integrantes:</strong> Ana Silva, Bruno Costa, Carlos Souza</p>
+                </div>
+                <a href="https://github.com" target="_blank" class="btn-link">Ver Projeto</a>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="card">
+                <div>
+                    <h3>Aplicativo de Reciclagem Governamental UrbanGreen</h3>
+                    <p class="authors"><strong>Integrantes:</strong> Daniela Lima, Eduardo Gomes</p>
+                </div>
+                <a href="https://seu-site.com" target="_blank" class="btn-link">Ver Projeto</a>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="card">
+                <div>
+                    <h3>Análise de Dados do Tráfego Urbano com IA</h3>
+                    <p class="authors"><strong>Integrantes:</strong> Fernanda Alves, Gabriel Santos, Juliana Ribeiro</p>
+                </div>
+                <a href="#" target="_blank" class="btn-link">Ver Projeto</a>
+            </div>
+
+            <!-- Repita o bloco do card para quantos projetos precisar -->
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Todos os direitos reservados à Turma de Formandos.</p>
+    </footer>
+
+</body>
+</html>
