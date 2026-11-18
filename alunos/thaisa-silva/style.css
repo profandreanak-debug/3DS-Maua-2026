@@ -1,0 +1,158 @@
+/* Configuração Geral - Fundo preto clássico da Fiel */
+body {
+    background-color: #121212;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.portfolio-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo dos Cards Principais */
+.card {
+    background-color: #1a1a1a;
+    border: 2px solid #ffffff;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Bloco 1: Hero / Apresentação */
+.hero-text h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 10px 0 20px 0;
+    line-height: 1.1;
+    font-weight: 950;
+}
+
+.tag {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 4px 8px;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+}
+
+.hero-text p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+/* Bloco 2: Índice */
+.contents-card {
+    grid-template-columns: 1fr;
+    background-color: #000000;
+}
+
+.contents-card h2 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.contents-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.contents-list li {
+    font-size: 0.95rem;
+    color: #dddddd;
+}
+
+.contents-list span {
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 15px;
+    background: #222;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* Bloco 3: Grade dos 3 Blocos Lado a Lado */
+.container-tres-blocos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-pequeno {
+    background-color: #1a1a1a;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-pequeno img {
+    height: 130px;
+    object-fit: cover;
+    border: 1px solid #ffffff;
+    margin-bottom: 15px;
+}
+
+.card-pequeno h3 {
+    font-size: 1.05rem;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.card-pequeno p {
+    color: #cccccc;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+/* Lista interna de certificados no card 3 */
+.lista-certificados {
+    padding-left: 15px;
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.lista-certificados li {
+    margin-bottom: 8px;
+}
+
+/* Responsividade para telemóveis e tablets */
+@media (max-width: 768px) {
+    .card, .contents-list, .container-tres-blocos {
+        grid-template-columns: 1fr;
+    }
+}
