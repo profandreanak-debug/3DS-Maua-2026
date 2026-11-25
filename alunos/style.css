@@ -1,0 +1,251 @@
+/* Configurações Gerais e Variáveis */
+:root {
+    --cor-fundo: #0f172a;
+    --cor-superficie: #1e293b;
+    --cor-texto: #f8fafc;
+    --cor-texto-secundario: #94a3b8;
+    --cor-destaque: #38bdf8;
+    --cor-destaque-hover: #0284c7;
+    --borda: #334155;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: rgba(15, 23, 42, 0.9);
+    border-bottom: 1px solid var(--borda);
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--cor-destaque);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.menu a {
+    color: var(--cor-texto-secundario);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: var(--cor-destaque);
+}
+
+/* Seção Principal (Hero) */
+.hero {
+    padding: 6rem 1.5rem;
+}
+
+.hero .destaque {
+    color: var(--cor-destaque);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.hero .subtitulo {
+    color: var(--cor-texto-secundario);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+/* Botões */
+.acoes, .links-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primario {
+    background-color: var(--cor-destaque);
+    color: #0f172a;
+}
+
+.btn-primario:hover {
+    background-color: var(--cor-destaque-hover);
+    color: var(--cor-texto);
+}
+
+.btn-secundario {
+    border: 1px solid var(--borda);
+    color: var(--cor-texto);
+}
+
+.btn-secundario:hover {
+    border-color: var(--cor-destaque);
+    color: var(--cor-destaque);
+}
+
+/* Seções Gerais */
+.secao {
+    padding: 4.5rem 1.5rem;
+    border-top: 1px solid var(--borda);
+}
+
+.secao h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.secao p {
+    color: var(--cor-texto-secundario);
+    max-width: 700px;
+}
+
+/* Projetos */
+.grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.tags li {
+    background-color: var(--cor-fundo);
+    color: var(--cor-destaque);
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+}
+
+.link-projeto {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.link-projeto:hover {
+    text-decoration: underline;
+}
+
+/* Habilidades */
+.lista-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.lista-habilidades li {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--borda);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* Contato e Rodapé */
+#contato p {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    border-top: 1px solid var(--borda);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--cor-texto-secundario);
+    font-size: 0.9rem;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+        gap: 0.75rem;
+    }
+
+    .menu {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+}
