@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snorlax (#143) - O Gigante Dorminhoco</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">💤</span>
+        <span>SNORLAX <strong>#143</strong></span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#rotina">Rotina</a></li>
+          <li><a href="#galeria">Fotos & Formas</a></li>
+          <li><a href="#pokeflauta">Pokéflauta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge-tipo">Tipo: Normal</span>
+        <h1>O Gigante<br><span>Dorminhoco</span></h1>
+        <p>
+          Snorlax passa o dia inteiro dormindo e comendo. Ele só acorda quando sente fome, devora cerca de <strong>400 kg de comida</strong> e volta imediatamente a tirar uma soneca.
+        </p>
+
+        <div class="quick-stats">
+          <div class="stat-pill">
+            <span class="label">Altura</span>
+            <span class="value">2,1 m</span>
+          </div>
+          <div class="stat-pill">
+            <span class="label">Peso</span>
+            <span class="value">460,0 kg</span>
+          </div>
+          <div class="stat-pill">
+            <span class="label">Categoria</span>
+            <span class="value">Dorminhoco</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#pokeflauta" class="btn btn-primary">🎵 Tocar Pokéflauta</a>
+          <a href="#galeria" class="btn btn-secondary">📸 Ver Galeria</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="snorlax-spotlight">
+          <div class="zzz-float z1">Z</div>
+          <div class="zzz-float z2">z</div>
+          <div class="zzz-float z3">z</div>
+          
+          <!-- Artwork Oficial com Fallback SVG automático -->
+          <img 
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png" 
+            alt="Snorlax Oficial" 
+            class="hero-img"
+            onerror="this.style.display='none'; document.getElementById('hero-svg-fallback').style.display='block';"
+          >
+          
+          <svg id="hero-svg-fallback" style="display:none;" viewBox="0 0 240 220" width="280" height="260">
+            <ellipse cx="120" cy="198" rx="85" ry="14" fill="rgba(0,0,0,0.2)"/>
+            <path d="M55 150 C35 120, 48 65, 85 52 L80 28 L102 44 C114 42, 126 42, 138 44 L160 28 L155 52 C192 65, 205 120, 185 150 C175 182, 65 182, 55 150 Z" fill="#2C5E6B"/>
+            <ellipse cx="120" cy="128" rx="56" ry="48" fill="#F7F1E1"/>
+            <ellipse cx="120" cy="68" rx="34" ry="26" fill="#F7F1E1"/>
+            <path d="M98 64 Q107 69 115 64" stroke="#1A3A44" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M125 64 Q133 69 142 64" stroke="#1A3A44" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M107 79 Q120 84 133 79" stroke="#1A3A44" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <polygon points="109,79 112,73 115,79" fill="#FFFFFF"/>
+            <polygon points="125,79 128,73 131,79" fill="#FFFFFF"/>
+            <ellipse cx="62" cy="176" rx="22" ry="16" fill="#F7F1E1" stroke="#2C5E6B" stroke-width="3"/>
+            <ellipse cx="178" cy="176" rx="22" ry="16" fill="#F7F1E1" stroke="#2C5E6B" stroke-width="3"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE & ATRIBUTOS -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Atributos & Habilidades</h2>
+        <p>Por trás da aparência tranquila existe uma muralha defensiva quase impenetrável.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Card de Status Base -->
+        <div class="card stats-card">
+          <h3>Status Base (Total: 540)</h3>
+          
+          <div class="stat-row">
+            <span class="stat-name">HP</span>
+            <span class="stat-num">160</span>
+            <div class="bar-bg"><div class="bar-fill hp" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="stat-row">
+            <span class="stat-name">Ataque</span>
+            <span class="stat-num">110</span>
+            <div class="bar-bg"><div class="bar-fill atk" style="width: 72%;"></div></div>
+          </div>
+
+          <div class="stat-row">
+            <span class="stat-name">Defesa</span>
+            <span class="stat-num">65</span>
+            <div class="bar-bg"><div class="bar-fill def" style="width: 45%;"></div></div>
+          </div>
+
+          <div class="stat-row">
+            <span class="stat-name">Atq. Esp.</span>
+            <span class="stat-num">65</span>
+            <div class="bar-bg"><div class="bar-fill spa" style="width: 45%;"></div></div>
+          </div>
+
+          <div class="stat-row">
+            <span class="stat-name">Def. Esp.</span>
+            <span class="stat-num">110</span>
+            <div class="bar-bg"><div class="bar-fill spd" style="width: 72%;"></div></div>
+          </div>
+
+          <div class="stat-row">
+            <span class="stat-name">Velocidade</span>
+            <span class="stat-num">30</span>
+            <div class="bar-bg"><div class="bar-fill spe" style="width: 22%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Card de Habilidades -->
+        <div class="abilities-stack">
+          <div class="card ability-item">
+            <div class="ability-tag">Habilidade 1</div>
+            <h4>🛡️ Imunidade (Immunity)</h4>
+            <p>O sistema imunológico de Snorlax é tão resistente que impede que ele seja envenenado em batalha.</p>
+          </div>
+
+          <div class="card ability-item">
+            <div class="ability-tag">Habilidade 2</div>
+            <h4>❄️ Gordura Espessa (Thick Fat)</h4>
+            <p>Sua camada densa de gordura reduz pela metade o dano recebido de golpes dos tipos <strong>Fogo</strong> e <strong>Gelo</strong>.</p>
+          </div>
+
+          <div class="card ability-item hidden">
+            <div class="ability-tag">Habilidade Oculta</div>
+            <h4>🍎 Glutão (Gluttony)</h4>
+            <p>Faz com que Snorlax coma sua Berry segurada mais cedo do que o normal quando seu HP cai pela metade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROTINA & CURIOSIDADES -->
+  <section id="rotina" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>A Rotina do Gigante</h2>
+        <p>Três fatos essenciais sobre o estilo de vida mais invejado de Kanto.</p>
+      </div>
+
+      <div class="routine-grid">
+        <div class="card routine-card">
+          <div class="routine-icon">
+            <svg viewBox="0 0 80 80" width="64" height="64">
+              <circle cx="40" cy="40" r="36" fill="#F4C430" opacity="0.2"/>
+              <path d="M40 22 C28 22, 22 32, 24 44 C26 55, 34 60, 40 58 C46 60, 54 55, 56 44 C58 32, 52 22, 40 22 Z" fill="#E63946"/>
+              <path d="M40 22 C42 15, 48 14, 52 17 C48 21, 44 22, 40 22 Z" fill="#2A9D8F"/>
+            </svg>
+          </div>
+          <h3>Apetite de 400 kg</h3>
+          <p>Ele não fica satisfeito até devorar 400 quilos de alimento em uma única refeição. Depois da última mordida, adormece instantaneamente.</p>
+        </div>
+
+        <div class="card routine-card">
+          <div class="routine-icon">
+            <svg viewBox="0 0 80 80" width="64" height="64">
+              <circle cx="40" cy="40" r="36" fill="#2C5E6B" opacity="0.15"/>
+              <path d="M26 42 Q40 24 54 42 Q40 60 26 42 Z" fill="#2C5E6B"/>
+              <circle cx="40" cy="42" r="7" fill="#F4C430"/>
+            </svg>
+          </div>
+          <h3>Estômago de Aço</h3>
+          <p>Seus sucos gástricos dissolvem qualquer veneno. Ele pode comer alimentos estragados ou espinhosos sem sofrer dor de barriga.</p>
+        </div>
+
+        <div class="card routine-card">
+          <div class="routine-icon">
+            <svg viewBox="0 0 80 80" width="64" height="64">
+              <circle cx="40" cy="40" r="36" fill="#E76F51" opacity="0.18"/>
+              <rect x="20" y="34" width="40" height="14" rx="7" fill="#1A3A44"/>
+              <line x1="25" y1="41" x2="55" y2="41" stroke="#F4C430" stroke-width="3" stroke-dasharray="6 4"/>
+            </svg>
+          </div>
+          <h3>Bloqueio de Estradas</h3>
+          <p>Em Kanto, é comum encontrar um Snorlax tirando uma soneca no meio da Rota 12 ou Rota 16. Crianças costumam pular sobre sua barriga elástica!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA DE FOTOS E FORMAS -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Fotos & Formas</h2>
+        <p>Explore as diferentes aparições, evolução e forma Gigantamax de Snorlax.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Card 1: Clássico -->
+        <div class="photo-card">
+          <div class="photo-frame classic">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png" alt="Snorlax Clássico">
+          </div>
+          <div class="photo-info">
+            <span class="tag">#143 • Clássico</span>
+            <h3>Snorlax Tradicional</h3>
+            <p>Pelagem azul-petróleo clássica e barriga creme macia.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Shiny -->
+        <div class="photo-card">
+          <div class="photo-frame shiny">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/143.png" alt="Snorlax Shiny">
+          </div>
+          <div class="photo-info">
+            <span class="tag shiny-tag">✨ Raro • Shiny</span>
+            <h3>Snorlax Brilhante</h3>
+            <p>Apresenta uma tonalidade azul-royal profunda e vibrante.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Munchlax -->
+        <div class="photo-card">
+          <div class="photo-frame pre-evo">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png" alt="Munchlax">
+          </div>
+          <div class="photo-info">
+            <span class="tag">#446 • Pré-Evolução</span>
+            <h3>Munchlax</h3>
+            <p>Evolui para Snorlax quando atinge alto nível de amizade.</p>
+          </div>
+        </div>
+
+        <!-- Card 4: Gigantamax -->
+        <div class="photo-card">
+          <div class="photo-frame gmax">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10206.png" alt="Gigantamax Snorlax">
+          </div>
+          <div class="photo-info">
+            <span class="tag gmax-tag">🔥 Fenômeno Galar</span>
+            <h3>Gigantamax Snorlax</h3>
+            <p>Uma árvore inteira e um jardim crescem sobre sua barriga colossal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO INTERATIVA EM CSS PURO: POKÉFLAUTA -->
+  <section id="pokeflauta" class="section bg-dark">
+    <div class="container">
+      <div class="section-header light">
+        <h2>Experimente Acordá-lo</h2>
+        <p>Escolha uma ação abaixo para interagir com o Snorlax em CSS puro!</p>
+      </div>
+
+      <div class="interactive-box">
+        <!-- Controles Radio Ocultos -->
+        <input type="radio" name="snorlax-mood" id="mood-sleep" checked>
+        <input type="radio" name="snorlax-mood" id="mood-awake">
+        <input type="radio" name="snorlax-mood" id="mood-eat">
+
+        <div class="mood-controls">
+          <label for="mood-sleep" class="mood-btn">💤 Deixar Dormindo</label>
+          <label for="mood-awake" class="mood-btn">🎵 Tocar Pokéflauta</label>
+          <label for="mood-eat" class="mood-btn">🍓 Dar Sitrus Berry</label>
+        </div>
+
+        <div class="stage">
+          <!-- Notas musicais que aparecem ao acordar -->
+          <div class="music-notes">
+            <span>♪</span>
+            <span>♫</span>
+            <span>♩</span>
+          </div>
+
+          <!-- Zzz que aparecem dormindo -->
+          <div class="sleep-zzz">
+            <span>Z</span>
+            <span>z</span>
+            <span>z</span>
+          </div>
+
+          <!-- Corações que aparecem comendo -->
+          <div class="eat-hearts">
+            <span>❤️</span>
+            <span>🍓</span>
+            <span>❤️</span>
+          </div>
+
+          <!-- Ilustração SVG Reativa do Snorlax -->
+          <svg class="interactive-snorlax" viewBox="0 0 240 220" width="240" height="220">
+            <ellipse cx="120" cy="198" rx="85" ry="14" fill="rgba(0,0,0,0.3)"/>
+            <!-- Corpo -->
+            <path d="M55 150 C35 120, 48 65, 85 52 L80 28 L102 44 C114 42, 126 42, 138 44 L160 28 L155 52 C192 65, 205 120, 185 150 C175 182, 65 182, 55 150 Z" fill="#2C5E6B"/>
+            <!-- Barriga -->
+            <ellipse cx="120" cy="128" rx="56" ry="48" fill="#F7F1E1"/>
+            <!-- Rosto -->
+            <ellipse cx="120" cy="68" rx="34" ry="26" fill="#F7F1E1"/>
+            
+            <!-- Olhos Dormindo -->
+            <g class="eyes-closed">
+              <path d="M98 64 Q107 69 115 64" stroke="#1A3A44" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M125 64 Q133 69 142 64" stroke="#1A3A44" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </g>
+
+            <!-- Olhos Acordados -->
+            <g class="eyes-open">
+              <circle cx="107" cy="63" r="5" fill="#1A3A44"/>
+              <circle cx="108" cy="61" r="1.5" fill="#FFFFFF"/>
+              <circle cx="133" cy="63" r="5" fill="#1A3A44"/>
+              <circle cx="134" cy="61" r="1.5" fill="#FFFFFF"/>
+            </g>
+
+            <!-- Olhos Felizes (Comendo) -->
+            <g class="eyes-happy">
+              <path d="M98 65 Q107 57 115 65" stroke="#1A3A44" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M125 65 Q133 57 142 65" stroke="#1A3A44" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </g>
+
+            <!-- Boca Normal -->
+            <g class="mouth-normal">
+              <path d="M107 79 Q120 84 133 79" stroke="#1A3A44" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <polygon points="109,79 112,73 115,79" fill="#FFFFFF"/>
+              <polygon points="125,79 128,73 131,79" fill="#FFFFFF"/>
+            </g>
+
+            <!-- Boca Aberta (Comendo/Bocejando) -->
+            <g class="mouth-open">
+              <ellipse cx="120" cy="80" rx="11" ry="8" fill="#E63946" stroke="#1A3A44" stroke-width="2.5"/>
+            </g>
+
+            <!-- Pés -->
+            <ellipse cx="62" cy="176" rx="22" ry="16" fill="#F7F1E1" stroke="#2C5E6B" stroke-width="3"/>
+            <ellipse cx="178" cy="176" rx="22" ry="16" fill="#F7F1E1" stroke="#2C5E6B" stroke-width="3"/>
+          </svg>
+
+          <!-- Mensagens de Estado -->
+          <div class="status-message msg-sleep">
+            <strong>Zzz...</strong> Snorlax está profundamente adormecido bloqueando o caminho.
+          </div>
+          <div class="status-message msg-awake">
+            <strong>A melodia da Pokéflauta ecoou!</strong> Snorlax acordou de mau humor e está pronto para batalhar!
+          </div>
+          <div class="status-message msg-eat">
+            <strong>Nham, nham!</strong> Snorlax devorou a Sitrus Berry e recuperou suas energias!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container">
+      <p>Página de fã dedicada ao <strong>Snorlax (#143)</strong> • Feita com HTML5 & CSS3 puro.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
